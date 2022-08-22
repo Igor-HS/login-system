@@ -4,6 +4,8 @@
 }
 
 body{
+    background-color: #F4F3F4;
+    font-family: sans-serif;
 
 }
 
@@ -31,4 +33,48 @@ body{
     max-width: 1200px;
     margin: auto;
 
+}
+
+/* 
+    Login Section
+*/
+
+.section-login{
+    height: calc(100vh - 50px);
+    display: flex;
+
+}
+
+
+.section-login .container{
+    min-width: 350px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+#form-login .form-group{
+    margin-bottom: 10px;
+
+}
+
+#form-login .form-group label{
+    display: block;
+    font-weight: bold;
+}
+
+#form-login .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+
+}
+
+#form-login .button-group input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
 }
