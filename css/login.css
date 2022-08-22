@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+.main-nav {
+    background-color: #1e2125;
+    color: white;
+    height: 50px;
+    display: flex;
+}
+
+.main-nav .container{
+    width: 100%;
+}
+
+.main-nav .links{
+    float: right;
+}
+
+.main-nav .links a{
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+}
