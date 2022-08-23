@@ -73,8 +73,14 @@ body{
 
 }
 
-#form-login .button-group input{
+.btn{
     width: 100%;
-    height: 40px;
+    height: 40px;    
+}
+
+.btn.btn-dark{
+    background-color: #1E2125;
+    color:white;
+    border: 0px;
     border-radius: 4px;
 }
