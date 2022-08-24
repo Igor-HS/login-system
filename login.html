@@ -21,14 +21,14 @@
 
     <section class="section-login">
         <div class="container">
-            <form id="form-login">
+            <form id="form-login" method="post">
                 <div class="form-group">
                     <label>E-mail</label>
-                    <input type="email" name="email"/>
+                    <input id="inputEmail" required type="email" name="email"/>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" name="password"/>
+                    <input id="inputPassword" required type="password" name="password"/>
                 </div>
                 <div class="button-group">
                     <input class="btn btn-dark" type="submit" value="Entrar"/>
@@ -37,6 +37,34 @@
         </div>
 
     </section>
+
+
+    <!-- CDN JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+       $(document).ready(function(){
+
+
+            $("#form-login").submit(function(event){
+                //Parar o comportamento padrão do evento.
+                event.preventDefault();
+
+                var emailDigitado = $("#inputEmail").val();
+                var senhaDigitada = $("#inputPassword").val();
+
+                console.log(emailDigitado,senhaDigitada);
+
+                alert(`Olá ${emailDigitado} você está tentando logar com a senha ${senhaDigitada}`);
+
+                $("#inputEmail").val("");
+                $("#inputPassword").val("");
+            })
+
+
+       })
+        
+    </script>
     
 </body>
 </html>
