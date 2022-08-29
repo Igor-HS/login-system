@@ -41,71 +41,7 @@
 
     <!-- CDN JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script>
-
-            var listaDeFuncionarios = [{
-                email: "emailum@mail.com",
-	            password: "123",
-	            name: "Joãozinho",
-	            phone_number: "(55) 99939-3993",
-	            role: "Desenvolvedor"
-            },{
-	            email: "emaildois@mail.com",
-	            password: "123",
-	            name: "Mariazinha",
-	            phone_number: "(53) 92329-3993",
-	            role: "Gerente"
-            },{
-	            email: "emailtres@mail.com",
-	            password: "123",
-	            name: "Terezinha",
-	            phone_number: "(23) 88379-3993",
-	            role: "Estagiário"
-            }];
-            
-            
-
-            function efetuaLogin(emailDigitado, senhaDigitada){
-
-                var usuarioValido = listaDeFuncionarios.find(function(funcionario, indice){
-                    console.log(funcionario);
-                    return funcionario.email == emailDigitado && funcionario.password == senhaDigitada;
-                })
-
-                if(usuarioValido){
-                    alert(`Logado com sucesso!`);
-                }else{
-                    alert(`Email ou senha inválidos!`);
-                }
-                
-            }
-            
-
-
-
-
-        //O ideal é deixar apenas coisas que necessitam do JQuery dentro dessa função.
-       $(document).ready(function(){
-
-            $("#form-login").submit(function(event){
-                //Parar o comportamento padrão do evento.
-                event.preventDefault();
-
-                var emailDigitado = $("#inputEmail").val();
-                var senhaDigitada = $("#inputPassword").val();
-
-                efetuaLogin(emailDigitado,senhaDigitada);
-                
-
-                $("#inputEmail").val("");
-                $("#inputPassword").val("");
-            })
-
-
-       })
-        
-    </script>
+    <script src="./js/login.js"></script>
     
 </body>
 </html>
