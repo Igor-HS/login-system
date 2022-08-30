@@ -34,7 +34,13 @@ function efetuaLogin(emailDigitado, senhaDigitada){
         salvarUsuario(usuarioValido);
         document.location = "listaDeUsuarios.html";
     }else{
-        alert(`Email ou senha inválidos!`);
+        $("#form-login-alert-error").css('display', 'block');
+
+        //seta que após 5segs a msg de erro some novamente.
+        setTimeout(function(){
+            $("#form-login-alert-error").css('display', 'none');
+        }, 5000);
+
     }
     
 }

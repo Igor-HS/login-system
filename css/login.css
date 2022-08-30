@@ -47,11 +47,12 @@ body{
 
 
 .section-login .container{
-    min-width: 350px;
+    max-width: 350px;
     padding: 20px;
     background-color: white;
     border: 1px solid #dee2e6;
     border-radius: 8px;
+    width: 100%;
 }
 
 #form-login .form-group{
@@ -83,4 +84,26 @@ body{
     color:white;
     border: 0px;
     border-radius: 4px;
+}
+
+.alert {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+}
+
+.alert.alert-error{
+    color: #842029;
+    background-color: #f8d7da;
+    border-color:#f5c2c7;
+
+}
+
+.hide{
+    display: none;
 }
