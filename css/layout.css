@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #F4F3F4;
+    font-family: sans-serif;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.main-nav {
+    background-color: #1e2125;
+    color: white;
+    height: 50px;
+    display: flex;
+}
+
+.main-nav .container{
+    width: 100%;
+}
+
+.main-nav .links{
+    float: right;
+}
+
+.main-nav .links a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav .links #userLogged{
+    margin-right: 20px;
+    font-weight: bold;
+}
