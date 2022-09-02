@@ -1,0 +1,42 @@
+.users-list .container {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    
+    
+}
+
+.users-list .container table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+
+.users-list .container table thead tr{
+    border-bottom: 1px solid black;
+    
+}
+
+.users-list .container table tbody tr{
+    border-bottom: 1px solid #dee2e6;
+    
+}
+
+.users-list .container table td,
+.users-list .container table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.users-list .container table td{
+    font-weight: bold;
+}
+
+.users-list .container table td a{
+    font-weight: 100;
+    text-decoration: none;
+    /*text-transform: lowercase;*/
+}
