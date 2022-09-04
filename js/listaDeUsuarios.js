@@ -1,25 +1,3 @@
-function logout(){
-    localStorage.removeItem('usuarioLogado');
-    document.location = "login.html";
-}
-
-function verificadoSeOUsuarioEstaLogado(){
-    var usuarioLogado = localStorage.getItem('usuarioLogado');
-
-    if(!usuarioLogado){
-        document.location = "login.html";
-    }
-}
-
-function mostraEmailUsuarioLogado(){
-
-    var usuarioLogado = localStorage.getItem('usuarioLogado');
-
-    var usuarioLogadoObecjt = JSON.parse(usuarioLogado);
-
-    $("#userLogged").html(usuarioLogadoObecjt.email);
-}
-
 function preencheListaDeUsuarios(){
 
     var table = $("#users-table");
@@ -36,16 +14,9 @@ function preencheListaDeUsuarios(){
 
 }
 
-verificadoSeOUsuarioEstaLogado();
 
 $(document).ready(function(){
 
-    mostraEmailUsuarioLogado();
     preencheListaDeUsuarios();
-
-
-    $("#logout").click(function(){
-        logout();
-    })
 
 })

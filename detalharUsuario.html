@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Usuários</title>
-    <link rel="stylesheet" href="./css/listaDeUsuarios.css">
+    <title>Detalhar Usuário</title>
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/detalharUsuario.css">
 </head>
 <body>
 
@@ -15,32 +15,33 @@
             <span>Login System</span>
             <div class="links">
                 <span id="userLogged"></span>
+                <a href="listaDeUsuarios.html">Dashboard</a>
                 <a id="logout" href="#">Sair</a>
             </div>
         </div>
     </nav>
 
-    <section class="users-list">
+    <section>
         <div class="container">
-            <table id="users-table">
-                <thead>
-                    <tr>
-                        <th>E-mail</th>
-                        <th>Nome</th>
-                        <th>Visualizar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <h1 id="nome"></h1>
+            <div class="details">
+                <div class="detail-group">
+                    <span class="label">E-mail:</span> <span class="value" id="email"></span>
+                </div>
+                <div class="detail-group">
+                    <span class="label">Telefone:</span> <span class="value" id="telefone"></span>
+                </div>
+                <div class="detail-group">
+                    <span class="label">Cargo:</span> <span class="value" id="cargo"></span>
+                </div>
+            </div>
         </div>
     </section>
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/usersList.js"></script>
     <script src="./js/shared.js"></script>
-    <script src="./js/listaDeUsuarios.js"></script>
+    <script src="./js/detalharUsuario.js"></script>
     
 </body>
 </html>

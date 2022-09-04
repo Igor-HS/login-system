@@ -1,11 +1,8 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 body{
     background-color: #F4F3F4;
     font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -34,9 +31,9 @@ body{
 .main-nav .links a{
     color: white;
     text-decoration: none;
+    margin-left: 20px;
 }
 
 .main-nav .links #userLogged{
-    margin-right: 20px;
     font-weight: bold;
 }

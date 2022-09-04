@@ -46,15 +46,15 @@ function verificadoSeOUsuarioEstaLogado(){
 //O ideal é deixar apenas coisas que necessitam do JQuery dentro dessa função.
 $(document).ready(function(){
 
-$("#form-login").submit(function(event){
-    //Parar o comportamento padrão do evento.
-    event.preventDefault();
+    $("#form-login").submit(function(event){
+        //Parar o comportamento padrão do evento.
+        event.preventDefault();
 
-    var emailDigitado = $("#inputEmail").val();
-    var senhaDigitada = $("#inputPassword").val();
+        var emailDigitado = $("#inputEmail").val();
+        var senhaDigitada = $("#inputPassword").val();
 
-    efetuaLogin(emailDigitado,senhaDigitada);
-})
+        efetuaLogin(emailDigitado,senhaDigitada);
+    })
 
 
 })
